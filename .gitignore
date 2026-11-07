@@ -1,0 +1,29 @@
+# 运行时生成的数据与上传文件
+data.json
+data.json.tmp
+settings.json
+uploads/
+
+# Python
+__pycache__/
+*.pyc
+
+# 构建与开发中间文件
+_t_*.txt
+_t_*.js
+_*.py
+_*.png
+_*.html
+_edge_log.txt
+.cut_block.js
+
+# 备份目录（旧版本网页、构建脚手架、测试图片已移到桌面「宝可梦-备份」）
+备份/
+
+# 工具工作目录
+.workbuddy/
+.wbapp_*.genie
+
+# 系统
+Thumbs.db
+.DS_Store
