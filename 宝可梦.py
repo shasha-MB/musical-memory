@@ -4057,6 +4057,14 @@ def main():
     print("  图片目录:  %s" % UPLOAD_DIR)
     print("=" * 52)
     print("  Ctrl + C 停止")
+    # 自动打开浏览器（设置 NO_BROWSER=1 可关闭）
+    if os.environ.get("NO_BROWSER") != "1":
+        try:
+            import webbrowser
+            threading.Timer(0.8, lambda: webbrowser.open(
+                "http://127.0.0.1:%d" % port)).start()
+        except Exception:
+            pass
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:
