@@ -27,3 +27,6 @@ _edge_log.txt
 # 系统
 Thumbs.db
 .DS_Store
+
+# 一键推送脚本（本地用）
+推送.bat
